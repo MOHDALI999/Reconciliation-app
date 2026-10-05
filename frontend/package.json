@@ -1,0 +1,40 @@
+{
+  "name": "order-vs-tally-reconciliation",
+  "version": "2.1.0",
+  "scripts": {
+    "dev": "vite",
+    "start": "node server/server.cjs",
+    "dev:all": "node scripts/dev.mjs",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test server/test/",
+    "bench": "node scripts/bench.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tanstack/react-virtual": "^3.14.13",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.3",
+    "express": "^4.22.3",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "lucide-react": "^1.47.0",
+    "multer": "^2.4.0",
+    "openai": "^7.23.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "xlsx": "file:vendor/xlsx-0.20.3.tgz",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^4.7.0",
+    "tailwindcss": "^4.3.3",
+    "vite": "^6.4.3"
+  },
+  "private": true,
+  "type": "module"
+}
