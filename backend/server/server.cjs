@@ -38,6 +38,9 @@ const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || '')
 fs.mkdirSync(UPLOAD_DIR, { recursive: true });
 
 const app = express();
+app.get('/', (req, res) => {
+  res.send('Hello World')
+})
 app.set('trust proxy', 1);
 app.use(helmet({ contentSecurityPolicy: false, crossOriginResourcePolicy: false }));
 app.use(cors({
